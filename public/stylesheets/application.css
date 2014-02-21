@@ -1,12 +1,13 @@
 html {
   color: black;
   font-family: "Comfortaa";
-  font-size: 12px; }
+  font-size: 14px; }
   html a {
     color: black;
     text-decoration: none; }
-    html a:hover {
-      text-decoration: underline; }
+
+.clear {
+  clear: both; }
 
 #siteWrapper {
   margin: 5% auto;
@@ -14,7 +15,8 @@ html {
 
 .leftColumn {
   float: left;
-  width: 375px; }
+  margin-top: 155px;
+  width: 368px; }
   .leftColumn header {
     font-size: 44px;
     text-align: right;
@@ -23,38 +25,112 @@ html {
     width: 100%; }
     .leftColumn nav li {
       font-size: 24px;
+      padding: 3px 1px 3px 0;
+      margin-top: 9px;
       text-align: right;
       text-transform: uppercase; }
+    .leftColumn nav .selected {
+      background-color: #cfcfcf; }
 
-#gallery .thumb {
-  display: inline-block;
-  float: left;
-  position: relative; }
-  #gallery .thumb .title {
-    background: rgba(255, 255, 255, 0.65);
-    font-size: 12px;
-    height: 100%;
-    left: 0;
+#gallery {
+  height: 377px;
+  margin-top: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 388px; }
+  #gallery .page {
     position: absolute;
     top: 0;
-    width: 100%; }
-    #gallery .thumb .title p {
-      margin-top: 30px;
-      text-align: center;
-      text-transform: uppercase; }
-#gallery .controls {
-  clear: both; }
-  #gallery .controls .plus, #gallery .controls .minus {
+    left: 100%;
+    width: 388px; }
+  #gallery .page.current {
+    display: block;
+    left: 0; }
+  #gallery .thumb {
+    float: left;
+    margin-bottom: 20px;
+    position: relative; }
+    #gallery .thumb:hover {
+      cursor: hand;
+      cursor: pointer; }
+      #gallery .thumb:hover .title {
+        display: block; }
+    #gallery .thumb .title {
+      background: rgba(255, 255, 255, 0.65);
+      display: none;
+      font-size: 12px;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      #gallery .thumb .title p {
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase; }
+  #gallery .thumb:not(.last) {
+    margin-right: 20px; }
+
+.controls {
+  width: 100%; }
+  .controls .plus, .controls .minus {
     font-size: 44px; }
-    #gallery .controls .plus:hover, #gallery .controls .minus:hover {
-      text-decoration: none; }
-  #gallery .controls .plus {
+  .controls .plus {
     float: right; }
 
 .rightColumn {
   float: right;
+  overflow: hidden;
+  position: relative;
   width: 455px; }
-  .rightColumn .title, .rightColumn .desc {
+  .rightColumn .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 60px; }
+  .rightColumn .title, .rightColumn .info {
     font-size: 15px;
+    margin-top: 10px;
     text-align: right;
     text-transform: uppercase; }
+  .rightColumn #email, .rightColumn #about {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: none;
+    height: 100%;
+    padding: 80px 0;
+    position: absolute;
+    width: 100%; }
+  .rightColumn #about .outer-center-helper {
+    float: right;
+    right: 50%;
+    position: relative; }
+  .rightColumn #about .inner-center-helper {
+    float: right;
+    right: -50%;
+    position: relative; }
+  .rightColumn #about img {
+    margin: 0 auto; }
+  .rightColumn #about p {
+    padding: 15px 15px; }
+  .rightColumn #email fieldset {
+    padding: 0 25px; }
+  .rightColumn #email label {
+    font-size: 24px;
+    text-transform: uppercase; }
+  .rightColumn #email input, .rightColumn #email textarea {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-bottom: 15px; }
+  .rightColumn #email input {
+    font-size: 24px;
+    width: 315px; }
+  .rightColumn #email textarea {
+    display: block;
+    font-size: 18px;
+    height: 375px;
+    margin-top: 15px;
+    width: 100%; }
+  .rightColumn #email .email {
+    font-size: 18px;
+    text-align: center;
+    width: 100%; }

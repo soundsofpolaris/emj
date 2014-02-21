@@ -7,7 +7,6 @@
 		%meta{:name=>"author",:content=>""}
 		%link{:rel=>"shortcut icon",:href=>"/favicon.ico"}
 		= stylesheet_link_tag 'reset', 'http://fonts.googleapis.com/css?family=Comfortaa', 'application'
-		%script{:type=>"text/javascript", :src=>"https://ajax.googleapis.com/ajax/libs/jquery/11.0/jquery.min.js"}
-		= javascript_include_tag 'application'
+		= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', 'application'
 #siteWrapper
 	= yield

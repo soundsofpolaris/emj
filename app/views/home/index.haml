@@ -3,37 +3,100 @@
 	%nav
 		%ul
 			%li
-				%a.about about
+				%a.about(href="#") about
 			%li
-				%a.email say hello
+				%a.email(href="#") say hello
 	#gallery
-		.thumb
-			%img(src="images/thumb.png")
-			.title 
-				%p electric coral
-		.thumb
-			%img(src="images/thumb.png")
-			.title 
-				%p electric coral
-		.thumb
-			%img(src="images/thumb.png")
-			.title 
-				%p electric coral
-		.thumb
-			%img(src="images/thumb.png")
-			.title 
-				%p electric coral
-		.thumb
-			%img(src="images/thumb.png")
-			.title 
-				%p electric coral		
-		.controls
-			%a.minus(href="#") -
-			%a.plus(href="#") +
+		.page.current
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb.last
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb.last
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb.last
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb.last
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+		.page
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral
+			.thumb.last
+				%img(src="images/thumb.png")
+				.title 
+					%p electric coral		
+	.controls
+		%a.button.minus(href="#") -
+		%a.button.plus(href="#") +
 .rightColumn
 	#about
+		%a.button.close(href="#") x
+		.outer-center-helper 
+			%img.inner-center-helper(src="images/protrait.jpg")
+			.clear
+		.clear
+		%p This is some copy about myself, my work, what inspires me to create. There might be several lines of writing, so there is plenty of room to write, explain.
 	#email
+		%a.close(href="#") x 
+		%form
+			%fieldset
+				%ul
+					%li
+						%label{:for => "from"} Name:
+						%input{:type => "text", :name => "from", :placeholder => "NAME"}
+					%li
+						%label{:for => "email"} Email:
+						%input{:type => "text", :name => "email", :placeholder => "EMAIL@WEBSITE.COM"} 
+					%li
+						%label{:for => "message"} Hello Erin:
+						%textarea{:name => "message", :placeholder => "YOUR MESSAGE TO ME"} 
+		%p.email erinjadepaintings@gmail.com
 	#painting
 		%img(src="images/painting.png")
-		.title electric coral
-		.desc acrylic + spray paint 68x72"
+		#description
+			.title electric coral
+			.info acrylic + spray paint 68x72"
