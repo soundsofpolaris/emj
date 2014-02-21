@@ -1,0 +1,60 @@
+html {
+  color: black;
+  font-family: "Comfortaa";
+  font-size: 12px; }
+  html a {
+    color: black;
+    text-decoration: none; }
+    html a:hover {
+      text-decoration: underline; }
+
+#siteWrapper {
+  margin: 5% auto;
+  width: 930px; }
+
+.leftColumn {
+  float: left;
+  width: 375px; }
+  .leftColumn header {
+    font-size: 44px;
+    text-align: right;
+    text-transform: uppercase; }
+  .leftColumn nav {
+    width: 100%; }
+    .leftColumn nav li {
+      font-size: 24px;
+      text-align: right;
+      text-transform: uppercase; }
+
+#gallery .thumb {
+  display: inline-block;
+  float: left;
+  position: relative; }
+  #gallery .thumb .title {
+    background: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    #gallery .thumb .title p {
+      margin-top: 30px;
+      text-align: center;
+      text-transform: uppercase; }
+#gallery .controls {
+  clear: both; }
+  #gallery .controls .plus, #gallery .controls .minus {
+    font-size: 44px; }
+    #gallery .controls .plus:hover, #gallery .controls .minus:hover {
+      text-decoration: none; }
+  #gallery .controls .plus {
+    float: right; }
+
+.rightColumn {
+  float: right;
+  width: 455px; }
+  .rightColumn .title, .rightColumn .desc {
+    font-size: 15px;
+    text-align: right;
+    text-transform: uppercase; }
